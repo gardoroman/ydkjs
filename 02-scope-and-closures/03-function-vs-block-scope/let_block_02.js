@@ -7,7 +7,7 @@ function foo(bar) {
   and makes it clear that the variables are block-scoped
   This type was rejected by the TC39 committee for now.
   */
-  let (baz = bar) {
+  let (baz = bar); {
     console.log(baz); // "bar"
   }
   console.log(baz); //error
